@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>TP FORMULAIRE</title>
+	<meta charset="utf-8">
+	<meta name="description" content="TP FORMULAIRE">
+	<!-- For Internet Explhorreur : to force css3 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Tablettes 'n' Mobiles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- main css and js -->
+
+	<script type="text/javascript" src="assets/js/jquery_3_3_1.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/datatable/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/global.css">
+	<script type="text/javascript" charset="utf8" src="assets/datatable/datatables.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/commun.js"></script>
+	
+</head>
+
+<body>
+	<div>
+		<img class="image" src="./assets/images/120-1207564_download-star-wars-saga-wallpaper-gallery-star-wars.jpg" alt="">
+	</div>
+	
+	<div id="page">
+		<header>
+			<!-- Entête de la zone considérée -->
+		</header>
+
+		<nav>
+			<!-- Nav. principale de la page -->
+		</nav>
+
+		<aside>
+			<!-- Les à-cotés de la page -->
+		</aside>
+
+		<!-- Contenu textuel de la page -->
+		<section>
+			<table id="table_personnes" class="stripe" border="1"></table>
+			<p>Prenom : <input type="text" name="prenom" id="prenom"></p>
+			<p>Nom : <input type="text" name="nom" id="nom"></p>
+			<p>Classe : <input type="text" name="classe" id="classe"></p>
+			<p>Espece : <input type="text" name="espece" id="espece"></p>
+			<p>Positionnement: <input type="text" name="positionnement" id="positionnement"></p>
+
+			<button onClick="ajoutPersonne()" class="btn_action" id="btn_ajouter">AJOUTER</button>
+			&nbsp;&nbsp;&nbsp;
+			<button onClick="modifPersonne(iIndiceEditionToKeep)" class="btn_action hide" id="btn_modifier">MODIFIER</button>
+			&nbsp;&nbsp;&nbsp;
+			<button onClick="annulPersonne()" class="btn_save hide" id="btn_annuler">ANNULER</button>
+		</section>
+
+		<footer>
+			<!-- Pied-de-page de la page -->
+		</footer>
+	</div>
+
+</body>
+
+</html>
