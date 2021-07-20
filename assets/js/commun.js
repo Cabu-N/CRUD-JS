@@ -42,6 +42,13 @@
 		aOfPersonnes[5]["espece"] = "Humain";
 		aOfPersonnes[5]["positionnement"] = "Obscur";
 
+		aOfPersonnes[5] = [];
+		aOfPersonnes[5]["prenom"] = "Jabba";
+		aOfPersonnes[5]["nom"] = "Desilijic Tiure";
+		aOfPersonnes[5]["classe"] = "néant";
+		aOfPersonnes[5]["espece"] = "Hutt";
+		aOfPersonnes[5]["positionnement"] = "néant";
+
 
 		function constructTable() {
 			var sHTML = "<thead>";
@@ -50,7 +57,7 @@
 			sHTML += "<td>Nom</td>";
 			sHTML += "<td>Classe</td>";
 			sHTML += "<td>Espece</td>";
-			sHTML += "<td>Positionnement</td>";
+			sHTML += "<td>Côté de la force</td>";
 			sHTML += "<td>Editer</td>";
 			sHTML += "<td>Supprimer</td>";
 			sHTML += "</tr>";
@@ -148,7 +155,7 @@
 		const configuration = {
 			"stateSave": false,
 			"order": [
-				[1, "asc"]
+				[0, "asc"]
 			],
 			"pagingType": "simple_numbers",
 			"searching": true,
