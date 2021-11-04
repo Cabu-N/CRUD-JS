@@ -161,7 +161,7 @@
 			"searching": true,
 			"lengthMenu": [
 				[10, 25, 50, 100, -1],
-				["Dix", "Vingt cinq", "Cinquante", "Cent", "Ze total stp"]
+				["Dix", "Vingt cinq", "Cinquante", "Cent"]
 			],
 			"language": {
 				"info": "Utilisateurs _START_ à _END_ sur _TOTAL_ sélectionnées",
@@ -198,7 +198,8 @@
 					"orderable": false
 				}
 			],
-			'retrieve': true
+			'retrieve': true,
+			'responsive': true
 		};
 
 		var tables;
